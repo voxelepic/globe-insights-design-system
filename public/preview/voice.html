@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Voice</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 28px 32px; font-family: var(--font-body); }
+  h5 { font-family: var(--font-display); font-weight: 900; font-size: 13px; margin: 0 0 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .col { display: flex; flex-direction: column; gap: 14px; }
+  .card-mini { border: var(--border); padding: 12px 14px; font-size: 13px; line-height: 1.45; }
+  .yes { background: var(--accent); }
+  .no  { background: var(--paper); position: relative; }
+  .no::before { content: "✕"; position: absolute; top: 6px; right: 10px; font-weight: 700; }
+  .yes::before { content: "✓"; position: absolute; top: 6px; right: 10px; font-weight: 700; }
+  .yes, .no { position: relative; padding-right: 30px; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="col">
+      <h5>SAY THIS</h5>
+      <div class="card-mini yes">You leave Friday. You're back Sunday. You've seen Lisbon.</div>
+      <div class="card-mini yes">3 days. 2 flights. €420 all in.</div>
+      <div class="card-mini yes">Book it. Pack light. Go.</div>
+    </div>
+    <div class="col">
+      <h5>NOT THIS</h5>
+      <div class="card-mini no">Discover hidden gems off the beaten path.</div>
+      <div class="card-mini no">We help travelers explore breathtaking destinations.</div>
+      <div class="card-mini no">Your next adventure awaits!</div>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Colors — States</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .swatch { border: var(--border); }
+  .chip   { height: 70px; }
+  .chip.accent       { background: var(--accent); }
+  .chip.accent-press { background: var(--accent-press); }
+  .chip.ink-05       { background: #f2f2f2; position: relative; }
+  .chip.ink-05::before { content: ""; position: absolute; inset: 0; background: var(--ink-05); }
+  .chip.focus-ring   { background: var(--paper); position: relative; }
+  .chip.focus-ring::after {
+    content: ""; position: absolute; inset: 14px;
+    background: var(--paper);
+    outline: 3px solid var(--accent); outline-offset: 2px;
+    border: var(--border);
+  }
+  .label  { padding: 8px 10px; display: flex; justify-content: space-between; gap: 6px; font-family: var(--font-body); font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; border-top: var(--border); }
+  .label b { font-weight: 700; }
+  .label span { opacity: 0.6; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="swatch"><div class="chip accent"></div><div class="label"><b>HOVER</b><span>#FFE600</span></div></div>
+    <div class="swatch"><div class="chip accent-press"></div><div class="label"><b>PRESS</b><span>#E8D200</span></div></div>
+    <div class="swatch"><div class="chip ink-05"></div><div class="label"><b>INK 05</b><span>5% ink</span></div></div>
+    <div class="swatch"><div class="chip focus-ring"></div><div class="label"><b>FOCUS</b><span>3px ring</span></div></div>
+  </div>
+</body></html>

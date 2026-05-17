@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Borders & Drop Block</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 32px; font-family: var(--font-body); }
+  .row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+  .demo { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .box  { width: 110px; height: 70px; background: var(--paper); border: var(--border); }
+  .b-sm { box-shadow: var(--drop-sm); }
+  .b-md { box-shadow: var(--drop); }
+  .b-lg { box-shadow: var(--drop-lg); }
+  .b-yl { box-shadow: var(--drop-accent); }
+  .lbl  { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.7; }
+</style></head>
+<body>
+  <div class="row">
+    <div class="demo"><div class="box"></div><div class="lbl">BORDER · 3PX</div></div>
+    <div class="demo"><div class="box b-sm"></div><div class="lbl">DROP-SM · 4 4</div></div>
+    <div class="demo"><div class="box b-md"></div><div class="lbl">DROP · 6 6</div></div>
+    <div class="demo"><div class="box b-lg"></div><div class="lbl">DROP-LG · 10 10</div></div>
+  </div>
+</body></html>

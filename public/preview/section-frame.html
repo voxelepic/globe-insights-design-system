@@ -1,0 +1,21 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Section frame</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; }
+  .section { border: var(--border); padding: 20px; box-shadow: var(--drop); display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; }
+  .section .title { font-family: var(--font-display); font-weight: 900; font-size: 36px; line-height: 0.95; text-transform: uppercase; letter-spacing: -0.02em; }
+  .yel { background: var(--accent); }
+  .body { font-size: 13px; }
+  .tag { display: inline-block; border: var(--border); padding: 4px 10px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 12px; }
+  .tag.bk { background: var(--ink); color: var(--paper); }
+</style></head>
+<body>
+  <div class="section yel">
+    <div>
+      <span class="tag bk">FEATURED</span>
+      <div class="title">3 DAYS.<br>2 FLIGHTS.<br>€420.</div>
+    </div>
+    <div class="body">Highlighted sections flip the background to <b>#FFE600</b> with the same 3px border and drop block. Use once per page, hard. Body copy stays black, monospace, normal weight.</div>
+  </div>
+</body></html>

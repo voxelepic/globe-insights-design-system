@@ -1,0 +1,31 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Marquee</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 0; }
+  .strip { padding: 16px 0; display: flex; align-items: center; gap: 32px; font-family: var(--font-display); font-weight: 900; font-size: 32px; text-transform: uppercase; letter-spacing: -0.01em; white-space: nowrap; }
+  .dot { width: 14px; height: 14px; background: var(--ink); display: inline-block; flex: 0 0 14px; }
+  .accent .dot { background: var(--ink); }
+  .accent { color: var(--ink); }
+</style></head>
+<body>
+  <div class="marquee">
+    <div class="strip">
+      <span>CHEAP.</span><span class="dot"></span>
+      <span>FAST.</span><span class="dot"></span>
+      <span>SHORT.</span><span class="dot"></span>
+      <span>COMFORTABLE.</span><span class="dot"></span>
+      <span>CHEAP.</span><span class="dot"></span>
+      <span>FAST.</span>
+    </div>
+  </div>
+  <div class="marquee marquee--accent accent">
+    <div class="strip">
+      <span>48H</span><span class="dot"></span>
+      <span>1 CARRY-ON</span><span class="dot"></span>
+      <span>BEST COMFORT PER €</span><span class="dot"></span>
+      <span>48H</span><span class="dot"></span>
+      <span>1 CARRY-ON</span>
+    </div>
+  </div>
+</body></html>

@@ -1,0 +1,22 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Colors — Core</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .swatch { border: var(--border); }
+  .chip   { height: 80px; }
+  .chip.paper  { background: var(--paper); border-bottom: var(--border); }
+  .chip.ink    { background: var(--ink); }
+  .chip.accent { background: var(--accent); }
+  .label  { padding: 10px 12px; display: flex; justify-content: space-between; gap: 8px; font-family: var(--font-body); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; }
+  .label b { font-weight: 700; }
+  .label span { opacity: 0.6; }
+</style></head>
+<body>
+  <div class="grid">
+    <div class="swatch"><div class="chip paper"></div><div class="label"><b>PAPER</b><span>#FFFFFF</span></div></div>
+    <div class="swatch"><div class="chip ink"></div><div class="label"><b>INK</b><span>#000000</span></div></div>
+    <div class="swatch"><div class="chip accent"></div><div class="label"><b>ACCENT</b><span>#FFE600</span></div></div>
+  </div>
+</body></html>

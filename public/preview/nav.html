@@ -1,0 +1,32 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nav</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { padding: 0; }
+  .nav { display: flex; align-items: center; justify-content: space-between; padding: 18px 28px; border-bottom: var(--border); background: var(--paper); }
+  .left { display: flex; align-items: center; gap: 10px; }
+  .mark { width: 30px; height: 30px; background: var(--ink); border: var(--border); position: relative; }
+  .mark::before { content: ""; position: absolute; inset: 4px; border: 2px solid var(--accent); border-radius: 50%; }
+  .wm { font-family: var(--font-display); font-weight: 900; font-size: 16px; text-transform: lowercase; letter-spacing: -0.02em; }
+  .links { display: flex; gap: 22px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
+  .links a { color: var(--ink); text-decoration: none; }
+  .links a.active { background: var(--accent); padding: 4px 8px; border: var(--border); }
+  .cta { font-family: var(--font-body); font-weight: 700; padding: 10px 16px; background: var(--ink); color: var(--paper); border: var(--border); box-shadow: var(--drop-sm); font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; }
+  .body { padding: 28px; font-size: 13px; opacity: 0.7; }
+</style></head>
+<body>
+  <div class="nav">
+    <div class="left">
+      <div class="mark"></div>
+      <div class="wm">globe.insights</div>
+    </div>
+    <div class="links">
+      <a class="active">PLANS</a>
+      <a>HOW IT WORKS</a>
+      <a>STORIES</a>
+      <a>FAQ</a>
+    </div>
+    <div class="cta">PLAN MY TRIP →</div>
+  </div>
+  <div class="body">Sticky top nav · 3px bottom border · logo left · primary CTA right with drop block · selected link gets a yellow fill.</div>
+</body></html>
